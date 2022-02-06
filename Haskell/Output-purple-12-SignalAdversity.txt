@@ -1,0 +1,32 @@
+(base) Chakravartis-MacBook-Pro:Haskell chakravartiraghavan$ ghc purple-12-SignalAdversity.hs
+[1 of 1] Compiling Main             ( purple-12-SignalAdversity.hs, purple-12-SignalAdversity.o )
+Linking purple-12-SignalAdversity ...
+(base) Chakravartis-MacBook-Pro:Haskell chakravartiraghavan$ ./purple-12-SignalAdversity 
+ ifEvenAdd2 7 = Nothing
+ ifEvenAdd2 8 = Just 10
+ 10 + maybeInt 20  = 32
+ 10 + maybeInt 21  = 10
+ mkPerson1 John Browning 160 = Just (Person "John Browning" 160)
+ mkPerson1 John Browning 160 = Nothing
+ typeOf (mkPerson Djali 5) = Either PersonInvalid Person
+ mkPerson Djali 5 = Right (Person "Djali" 5)
+ mkPerson __ 10 = Left NameEmpty
+ mkPerson Djali -1 = Left AgeTooLow
+ mkPersonNew both error mkPerson empty (-1) = Left [NameEmpty,AgeTooLow]
+string1 = "Rafa nadal is the goat with 21 grand slams. The greatest!"
+string1 to words1 = ["Rafa","nadal","is","the","goat","with","21","grand","slams.","The","greatest!"]
+ Replaced String as list = "Rafa nadal is a goat with 21 grand slams. The greatest!"
+ notThe Rafa = Just "Rafa"
+ notThe the = Nothing
+ vowelInitial cow = False
+ vowelInitial "evil" = True
+This sentence is not a "sentence" 
+ words2 = ["this","is","2nd","exercise","the","cow","the","evil","cow","the","greatest","the","undoubtably","greatest","the"]
+ CountThe words2 = [1,1,1,1,1]
+ the Indices in word2 = [4,6,9,11,14]
+ the Next Indices of the in word2 = [5,7,10,12]
+ = 2
+ = "is"
+ Final words next of the = ["cow","evil","greatest","undoubtably"]
+ finalVowelCount = 2
+(base) Chakravartis-MacBook-Pro:Haskell chakravartiraghavan$ 

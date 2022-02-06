@@ -1,0 +1,51 @@
+(base) Chakravartis-MacBook-Pro:Haskell chakravartiraghavan$ stack ghc --package QuickCheck -- purple-15-monoid-semigroup.hs
+[1 of 1] Compiling Main             ( purple-15-monoid-semigroup.hs, purple-15-monoid-semigroup.o )
+Linking purple-15-monoid-semigroup ...
+
+(base) Chakravartis-MacBook-Pro:Haskell chakravartiraghavan$ ./purple-15-monoid-semigroup 
+ m1 mappend = [1,2,3,4,5,6]
+ m2 mappend mempty = [4,8,10]
+ m3 mappend mempty = [5,9,11]
+ mc1 moncat = [1,2,3,4,5,6]
+ mc1 moncat = "Trout goes well with garlic"
+ ++ = [3,2,1,6,5,4]
+ foldr ++ = [10,11,12,13,14,15,16]
+ foldr mappend = [1,2,3,4,5,6]
+ sum = Sum {getSum = 6}
+ prod1 = Product {getProduct = 25}
+ sum3 3 variables = Sum {getSum = 6}
+ sum4 <> operator = Sum {getSum = 16}
+ mconcat over sum = Sum {getSum = 39}
+ getsum = 3
+ getProduct = 25
+ getsum concat w $ = 6
+ getsum concat w  brackets = 6
+ prod int declare and fold = Product {getProduct = 48}
+ sum int declare and fold = Sum {getSum = 12}
+ String and fold = "blahwoot"
+ Left Identity = Sum {getSum = 1}
+ Right Identity = Sum {getSum = 1}
+ Bool1  = All {getAll = True}
+ Bool2  = All {getAll = False}
+ Bool3  = Any {getAny = True}
+ Bool4  = Any {getAny = False}
+ First1  = First {getFirst = Just 1}
+ First with 1st Nothing and 2nd Just = First {getFirst = Just 2}
+YES!!!
+ Opt1  = Only (Sum {getSum = 2})
+ProdOpt1  = Only (Product {getProduct = 8})
+sumNada  = Only (Sum {getSum = 1})
+sum1Nada  = Only [1]
+sum1_2  = Only [1,2]
+madlib  = "Blacky! he said while as he jumped into his car Dodge and drove off with his pretty wife."
++++ OK, passed 100 tests.
++++ OK, passed 100 tests.
++++ OK, passed 100 tests.
+ Quickcheck  ma :: BullMappend : 
++++ OK, passed 100 tests.
+ mli1 :: Bull -> Bool : 
+*** Failed! Falsified (after 1 test):  
+Twoo
+ mli1 :: Bull -> Bool: 
+*** Failed! Falsified (after 1 test):  
+Twoo
