@@ -9,9 +9,6 @@
 data Either' a b = Left' a | Right' b deriving (Show)
 
 instance Functor (Either' z) where
--- --- --fmap :: (a -> b) -> Either' Int a -> Either' Int b
---    fmap f (Left' n) = Left' n
---    fmap f (Right' a) = Right' (f a)
     fmap l (Left' n) = Left' n
     fmap l (Right' a) = Right' (l a)
 
